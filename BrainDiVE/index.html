@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Brain Diffusion for Visual Exploration: Cortical Discovery using Large Scale Generative Models.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brain Diffusion for Visual Exploration: Cortical Discovery using Large Scale Generative Models</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+<!--  <link rel="icon" href="./static/images/favicon.svg">-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+<!--      <a class="navbar-item" href="https://keunhong.com">-->
+<!--      <span class="icon">-->
+<!--          <i class="fas fa-home"></i>-->
+<!--      </span>-->
+<!--      </a>-->
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" >
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://arxiv.org/abs/2310.04420">
+            BrainSCUBA
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Brain Diffusion for Visual Exploration: Cortical Discovery using Large Scale Generative Models</h1>
+          <h3 class="title is-size-4">NeurIPS 2023 Oral</h3>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.cs.cmu.edu/~afluo/">Andrew F. Luo</a>,</span>
+            <span class="author-block">
+              <a href="https://www.maggie-henderson.com/">Margaret M. Henderson</a>,</span>
+            <span class="author-block">
+              <a href="https://www.cs.cmu.edu/~lwehbe/">Leila Wehbe</a><sup>*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sites.google.com/andrew.cmu.edu/tarrlab/people/michael-j-tarr">Michael J. Tarr</a><sup>*</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Carnegie Mellon University</span><br>
+            <span class="author-block"><sup>*</sup>Co-corresponding Authors</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2306.03089.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>PDF</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2306.03089"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-youtube"></i>-->
+<!--                  </span>-->
+<!--                  <span>Video</span>-->
+<!--                </a>-->
+<!--              </span>-->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/aluo-x/BrainDiVE"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://github.com/aluo-x/BrainDiVE"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-github"></i>-->
+<!--                  </span>-->
+<!--                  <span>Code</span>-->
+<!--                  </a>-->
+<!--              </span>-->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <img src="./static/images/teaser.png" style="width:100%; margin-right:0px; margin-top:0px;">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">BrainDiVE</span> synthesizes images predicted to activate different brain areas.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-3">
+          <video poster="" id="3" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/food_S1_6006_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-4">
+          <video poster="" id="4" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/food_S1_6025_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-5">
+          <video poster="" id="5" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/place_S1_3010_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-6">
+          <video poster="" id="6" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/place_S1_3012_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-7">
+          <video poster="" id="7" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/place_S1_3027_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-1">
+          <video poster="" id="1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/face_S1_242_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-2">
+          <video poster="" id="2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/face_S1_724_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-8">
+          <video poster="" id="8" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/word_S1_5001_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-9">
+          <video poster="" id="9" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/word_S1_5013_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-10">
+          <video poster="" id="10" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/body_S1_4003_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+                <div class="item item-11">
+          <video poster="" id="11" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/body_S1_4004_out.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+    <div style="text-align: center;"><h3>Note: The images shown here use the DDIM prediction with residual noise in the image, which are used as input to the encoder.</h3></div>
+
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            A long standing goal in neuroscience has been to elucidate the functional organization of the brain. Within higher visual cortex, functional accounts have remained relatively coarse, focusing on regions of interest (ROIs) and taking the form of selectivity for broad categories such as faces, places, bodies, food, or words. Because the identification of such ROIs has typically relied on manually assembled stimulus sets consisting of isolated objects in non-ecological contexts, exploring functional organization without robust a priori hypotheses has been challenging.</p><p>To overcome these limitations, we introduce a data-driven approach in which we synthesize images predicted to activate a given brain region using paired natural images and fMRI recordings, bypassing the need for category-specific stimuli. Our approach -- Brain Diffusion for Visual Exploration ("<span class="dnerf">BrainDiVE</span>") -- builds on recent generative methods by combining large-scale diffusion models with brain-guided image synthesis. Validating our method, we demonstrate the ability to synthesize preferred images with appropriate semantic specificity for well-characterized category-selective ROIs. We then show that <span class="dnerf">BrainDiVE</span> can characterize differences between ROIs selective for the same high-level category. Finally we identify novel functional subdivisions within these ROIs, validated with behavioral data.</p><p> These results advance our understanding of the fine-grained functional organization of human visual cortex, and provide well-specified constraints for further examination of cortical organization using hypothesis-driven methods.
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+<!--    <div class="columns is-centered has-text-centered">-->
+<!--      <div class="column is-four-fifths">-->
+<!--        <h2 class="title is-3">Video</h2>-->
+<!--        <div class="publication-video">-->
+<!--          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"-->
+<!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column is-full-width">
+        <div class="content">
+          <h2 class="title is-3">Method</h2>
+          <div style="text-align: center;"><img src="./static/images/arch.png"></div>
+
+          <p>
+            <span class="dnerf">BrainDiVE</span> only requires the training of a differentaible voxel-wise fMRI encoder, where the encoder maps from RGB images to predicted voxel-wise brain activations (fMRI betas). The encoder is combined with a latent diffusion model (LDM) to generate naturalistic outputs which are predicted to activate a set of voxels.
+          </p>
+          <p>
+            In our framework, we leverage OpenCLIP ViT-B/16 as the encoder backbone. The output of the last layer is scaled to unit-norm, then passed through a linear probe with voxel-wise bias to predict the fMRI activations. The diffusion model used is Stable Diffusion v2-1-base, which outputs 512×512 images using ε-prediction (noise prediction). We use the approach proposed by crowsonkb of using first-order DDIM (euler) predicted output with residual noise at each time step, followed by resizing the image to 224×224 as input to the encoder. The desired voxel activations are averaged, then backproped into the diffusion output.
+          </p>
+          <p>
+            Similar to other image synthesis works like DALL-E, reranking can be done using the encoder itself. We choose to preserve the top-20% of images as done in <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8845078">NeuroGen</a>.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column is-full-width">
+        <div class="content">
+<!--          <div style="text-align: center;"><img src="./static/images/arch.png"></div>-->
+          <h2 class="title is-3">Results</h2>
+          <p>
+            In the paper we apply the method at three hierarchical levels. Evaluation is done using CLIP n-way classification for the first experiment, and done via human study on prolific for the second and third experiments.
+
+          </p>
+          <br><br>
+          <div style="text-align: center;"><img src="./static/images/S1_supp.jpg"></div>
+
+          <p>
+            <strong>First</strong>, we apply it to broad category selective regions in the brain, where each region is identified via functional localizer to be selective to a semantic category (faces, places, bodies, words, food). In this experiment, we find that BrainDiVE generates images with high semantic specificity that matches the ground truth selectivity.
+          </p>
+          <br><br>
+          <div style="text-align: center;"><img src="./static/images/S2_FFA_OFA_supp.jpg"></div>
+          <p>
+            <strong>Second</strong>, we apply it to OFA/FFA, which are two individual ROIs believed to code for face features at lower (face parts) and higher levels (whole faces) in the visual hierarchy. We find that BrainDiVE generates images for OFA that are more abstractly face-like (animal, non-human face), while BrainDiVE generates images for FFA with realistic human faces.
+          </p>
+
+          <br><br>
+          <div style="text-align: center;"><img src="./static/images/OPA_split.png"></div>
+          <p>
+            <strong>Third</strong>, we apply it to sub-clusters of OPA, and sub-clusters of the food ROI. For the former, we identify a cluster selective for outdoor scenes, and a cluster for indoor scenes. For the latter, we identify a cluster selective for colorful foods, and another cluster selective for non-colorful foods. For clusters in both ROIs, we perform human studies to verify the trends in the original top images and the BrainDiVE generated images, and find that our method can highlight pre-existing trends in selectivity.
+          </p>
+          <p>
+            Please check out the paper for additional visualizations.
+          </p>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Works</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            There is a large amount of literature on performing similar tasks in mice, macaque monkeys, and humans.
+          </p>
+          <p>
+            <a href="https://www.nature.com/articles/s41593-019-0517-x">Inception loops discover what excites neurons most using deep predictive models (2019)</a> and  <a href="https://www.science.org/doi/10.1126/science.aav9436">Neural population control via deep image synthesis (2019)</a> completed similar tasks in mice and macaque monkeys respectively using electrophysiology. These two approaches both use gradients of a learned image-computable encoder, but do not constrain the image using generative models.
+          </p>
+          <p>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0092867419303915">Evolving Images for Visual Neurons Using a Deep Generative Network Reveals Coding Principles and Neuronal Preferences (2019)</a> uses genetic algorithms in a gradient free setting to perform synthesis of naturalistic images with electrophysiology in macaques.
+          </p>
+          <p>
+            Recent work has moved on to fMRI recordings in humans. <a href="https://www.nature.com/articles/s41467-021-25409-6">Computational models of category-selective brain regions enable high-throughput tests of selectivity (2021)</a> and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8845078/">NeuroGen: Activation optimized image synthesis for discovery neuroscience (2022)</a> both leverage BigGAN, and NeuroGen in particular uses the <a href="https://naturalscenesdataset.org/">NSD dataset</a> like us. These two works differ in their image synthesis strategy. The 2021 paper uses gradients alone, and treat the class-conditioning vector in BigGAN as a convex combination of the 1000 original ImageNet class vectors. While NeuroGen first searches for the most activating classes, then performs gradient optimization with fixed class vectors.
+          </p>
+          <p> Concurrent work in <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10245650/">Energy Guided Diffusion for Generating Neurally Exciting Images (2023)</a> also uses a diffusion model, but focuses on modeling macaque V4 in early visual, which tends to be activated by textures rather than complex scenes as in our work.
+             </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{luo2023brain,
+  title={Brain Diffusion for Visual Exploration: Cortical Discovery using Large Scale Generative Models},
+  author={Luo, Andrew F and Henderson, Margaret M and Wehbe, Leila and Tarr, Michael J},
+  journal={arXiv preprint arXiv:2306.03089},
+  year={2023}
+}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+<!--    <div class="content has-text-centered">-->
+<!--      <a class="icon-link"-->
+<!--         href="./static/videos/nerfies_paper.pdf">-->
+<!--        <i class="fas fa-file-pdf"></i>-->
+<!--      </a>-->
+<!--      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>-->
+<!--        <i class="fab fa-github"></i>-->
+<!--      </a>-->
+<!--    </div>-->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of Nerfies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
