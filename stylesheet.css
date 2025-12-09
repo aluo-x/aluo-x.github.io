@@ -134,3 +134,41 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.mobile-photo {
+    display: none;
+}
+
+/* 2. Mobile Rules */
+@media screen and (max-width: 768px) {
+
+    /* Stack the table cells */
+    tr.profile-row {
+        display: block;
+        width: 100%;
+    }
+
+    /* Make the text cell full width */
+    tr.profile-row > td {
+        display: block;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px 0 !important;
+    }
+
+    /* HIDE the original side-photo cell on mobile */
+    td.photo-cell {
+        display: none !important;
+    }
+
+    /* SHOW and style the mobile-only photo */
+    .mobile-photo {
+        display: block;           /* Make it visible */
+        width: 60%;               /* 70% width as requested */
+        max-width: 60%;
+        margin: 20px auto;        /* Center it and add spacing top/bottom */
+        height: auto;
+    }
+}
